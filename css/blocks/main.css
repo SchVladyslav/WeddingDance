@@ -60,7 +60,8 @@
   font-size: 36px; }
 
 .card__list {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
 
 .card__item + .card__item {
   margin-left: 20px; }
@@ -113,7 +114,7 @@
   font-weight: normal; }
 
 /* /Offer */
-@media (max-width: 1020px) {
+@media (max-width: 1080px) {
   .intro {
     flex-direction: column;
     align-items: unset;
@@ -128,8 +129,7 @@
       background-size: cover; } }
 
 @media (max-width: 768px) {
-  .intro {
-    margin-bottom: 0; }
+  .intro,
   .services {
     margin-bottom: 55px; }
   .intro__desc, .services__desc, .offer__desc {

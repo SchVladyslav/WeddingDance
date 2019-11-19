@@ -34,7 +34,7 @@
   .nav__item a {
     margin-left: 15px; } }
 
-@media (max-width: 971px) {
+@media (max-width: 991px) {
   .header {
     margin-top: 0; }
   .header__title {
@@ -44,7 +44,7 @@
     .nav__toggle {
       position: absolute;
       top: 0;
-      right: 0;
+      right: 15px;
       z-index: 2;
       display: block;
       width: 70px;
@@ -88,7 +88,7 @@
     align-items: baseline;
     position: absolute;
     top: 50px;
-    left: 0px;
+    left: 25px;
     z-index: 10;
     min-width: 100%;
     min-height: 400px;
@@ -108,3 +108,9 @@
   .header__nav--opened .nav__item {
     margin-bottom: 20px;
     margin-left: 0; } }
+
+@media (max-width: 768px) {
+  .nav__toggle {
+    right: 0; }
+  .header__nav--opened .header__nav-wrap {
+    left: 0; } }

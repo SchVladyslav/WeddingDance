@@ -1,0 +1,208 @@
+.intro,
+.services {
+  margin-bottom: 100px; }
+
+.intro {
+  display: flex;
+  align-items: center;
+  height: 700px; }
+
+.intro__text-wrap {
+  max-width: 35%; }
+
+.intro__title {
+  font-size: 72px;
+  line-height: 72px;
+  margin-bottom: 15px; }
+
+.intro__subtitle {
+  font-size: 24px;
+  margin-bottom: 40px; }
+
+.intro__desc {
+  width: 85%;
+  margin-bottom: 45px; }
+
+.intro__button-start {
+  width: 161px;
+  height: 46px;
+  padding: 10px 40px;
+  color: #ff699f;
+  border-color: #ff699f; }
+
+.intro__button-start:hover {
+  color: #000; }
+
+.intro__img-wrap {
+  width: 100%;
+  max-height: 653px;
+  height: 100%;
+  background-image: url("../../img/first-dance-min.jpg");
+  background-repeat: no-repeat;
+  background-position: top right; }
+
+/* Common Service and Offer */
+.services__title,
+.offer__title {
+  margin-bottom: 25px; }
+
+.services__desc,
+.offer__desc {
+  width: 50%;
+  margin-bottom: 50px; }
+
+/* Services */
+.services {
+  display: flex;
+  flex-direction: column; }
+
+.services__title {
+  font-size: 36px; }
+
+.card__list {
+  display: flex; }
+
+.card__item + .card__item {
+  margin-left: 20px; }
+
+.card__item {
+  max-height: 640px;
+  width: 420px;
+  box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
+  border-radius: 2px;
+  padding-bottom: 20px;
+  cursor: pointer; }
+
+.card__item img {
+  margin-bottom: 40px;
+  border-radius: 2px; }
+
+.card__title {
+  font-size: 24px;
+  margin-bottom: 25px; }
+
+.card__tag + .card__tag {
+  margin-top: 10px; }
+
+.card__title,
+.card__tag {
+  margin-left: 25px; }
+
+/* /Services */
+/* Offer */
+.offer {
+  display: flex;
+  flex-direction: column; }
+
+.offer__title {
+  font-size: 36px; }
+
+.offer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center; }
+
+.offer__item {
+  width: 350px;
+  margin-bottom: 85px; }
+
+.offer__item h3 {
+  font-size: 16px;
+  font-weight: normal; }
+
+/* /Offer */
+@media (max-width: 1020px) {
+  .intro {
+    flex-direction: column;
+    align-items: unset;
+    margin-top: 20px; }
+    .intro__text-wrap {
+      order: 2;
+      max-width: 100%; }
+    .intro__img-wrap {
+      order: 1;
+      height: 392px;
+      margin-bottom: 40px;
+      background-size: cover; } }
+
+@media (max-width: 768px) {
+  .intro {
+    margin-bottom: 0; }
+  .services {
+    margin-bottom: 55px; }
+  .intro {
+    flex-direction: column;
+    align-items: unset; }
+    .intro__text-wrap {
+      order: 2;
+      max-width: 100%; }
+    .intro__img-wrap {
+      order: 1;
+      height: 392px;
+      margin-bottom: 40px;
+      background-size: cover; }
+    .intro__title {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 10px; }
+    .intro__subtitle {
+      font-size: 14px;
+      margin-bottom: 15px; }
+    .intro__desc {
+      width: auto;
+      margin-bottom: 30px;
+      font-size: 13px; }
+  .services__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px; }
+  .services__desc {
+    width: auto;
+    margin-bottom: 30px;
+    font-size: 13px; }
+  .services .card__item + .card__item {
+    margin-right: 40px; }
+  .services .card__item {
+    min-height: 451px;
+    width: 285px;
+    margin-bottom: 10px;
+    cursor: grabbing; }
+    .services .card__item img {
+      margin-bottom: 15px; }
+  .services .card__title {
+    font-size: 18px;
+    margin-bottom: 15px; }
+  .services .card__tag + .card__tag {
+    margin-top: 5px; }
+  .services .card__title,
+  .services .card__tag {
+    margin-left: 15px; }
+  .offer__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px; }
+  .offer__desc {
+    width: auto;
+    margin-bottom: 30px;
+    font-size: 13px; }
+  .offer__list {
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .offer__item {
+    width: 182px;
+    margin-bottom: 30px; }
+  .offer__item .icon {
+    font-size: 32px; }
+  .offer__item h3 {
+    font-size: 13px;
+    line-height: 18px; } }
+
+@media (max-width: 426px) {
+  .intro {
+    margin-bottom: 55px; }
+  .offer__list {
+    justify-content: center; }
+  .card__item {
+    height: 351px; } }

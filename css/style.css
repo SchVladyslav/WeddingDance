@@ -1,0 +1,14 @@
+/* Global styles */
+@import url("./blocks/global-styles.css");
+
+/* Icons */
+@import url("./icon-style.css");
+
+/* Header */
+@import url("./blocks/header.css");
+
+/* Main */
+@import url("./blocks/main.css");
+
+/* Footer */
+@import url("./blocks/footer.css");

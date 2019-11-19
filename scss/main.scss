@@ -177,13 +177,13 @@ $mobile-media: 426px;
     margin-bottom: 55px;
   }
 
-  @mixin desc-style {
+  %_desc-style {
     width: auto;
     margin-bottom: 30px;
     font-size: 13px;
   }
 
-  @mixin h2-title-style {
+  %_h2-title-style {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 10px;
@@ -218,17 +218,17 @@ $mobile-media: 426px;
     }
 
     &__desc {
-      @include desc-style;
+      @extend %_desc-style;
     }
   }
 
   .services {
     &__title {
-      @include h2-title-style;
+      @extend %_h2-title-style;
     }
 
     &__desc {
-      @include desc-style;
+      @extend %_desc-style;
     }
 
     .card__item + .card__item {
@@ -263,11 +263,11 @@ $mobile-media: 426px;
 
   .offer {
     &__title {
-      @include h2-title-style;
+      @extend %_h2-title-style;
     }
 
     &__desc {
-      @include desc-style;
+      @extend %_desc-style;
     }
 
     &__list {

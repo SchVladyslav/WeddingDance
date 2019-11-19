@@ -132,6 +132,14 @@
     margin-bottom: 0; }
   .services {
     margin-bottom: 55px; }
+  .intro__desc, .services__desc, .offer__desc {
+    width: auto;
+    margin-bottom: 30px;
+    font-size: 13px; }
+  .services__title, .offer__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px; }
   .intro {
     flex-direction: column;
     align-items: unset; }
@@ -150,18 +158,6 @@
     .intro__subtitle {
       font-size: 14px;
       margin-bottom: 15px; }
-    .intro__desc {
-      width: auto;
-      margin-bottom: 30px;
-      font-size: 13px; }
-  .services__title {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 10px; }
-  .services__desc {
-    width: auto;
-    margin-bottom: 30px;
-    font-size: 13px; }
   .services .card__item + .card__item {
     margin-right: 40px; }
   .services .card__item {
@@ -179,14 +175,6 @@
   .services .card__title,
   .services .card__tag {
     margin-left: 15px; }
-  .offer__title {
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 10px; }
-  .offer__desc {
-    width: auto;
-    margin-bottom: 30px;
-    font-size: 13px; }
   .offer__list {
     flex-wrap: wrap;
     justify-content: space-between; }

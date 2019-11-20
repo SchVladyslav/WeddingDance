@@ -2,6 +2,9 @@ $desktop-media: 1080px;
 $tablet-media: 768px;
 $mobile-media: 426px;
 
+$button-color: #ff699f;
+$bg-image: url("../../img/first-dance-min.jpg");
+
 .intro,
 .services {
   margin-bottom: 100px;
@@ -37,8 +40,8 @@ $mobile-media: 426px;
   width: 161px;
   height: 46px;
   padding: 10px 40px;
-  color: #ff699f;
-  border-color: #ff699f;
+  color: $button-color;
+  border-color: $button-color;
 }
 
 .intro__button-start:hover {
@@ -49,7 +52,7 @@ $mobile-media: 426px;
   width: 100%;
   max-height: 653px;
   height: 100%;
-  background-image: url("../../img/first-dance-min.jpg");
+  background-image: $bg-image;
   background-repeat: no-repeat;
   background-position: top right;
 }

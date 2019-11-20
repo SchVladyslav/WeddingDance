@@ -1,4 +1,7 @@
-$tablet-media: 991px;
+$laptop-media-L: 1230px;
+$laptop-media-M: 991px;
+$tablet-media: 768px;
+$button-color: #ff699f;
 
 .header {
   display: flex;
@@ -36,17 +39,17 @@ $tablet-media: 991px;
 }
 
 .header__button:hover {
-  color: #ff699f;
-  border-color: #ff699f;
+  color: $button-color;
+  border-color: $button-color;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: $laptop-media-L) {
   .nav__item a {
     margin-left: 15px;
   }
 }
 
-@media (max-width: $tablet-media) {
+@media (max-width: $laptop-media-M) {
   .header {
     margin-top: 0;
   }
@@ -166,7 +169,7 @@ $tablet-media: 991px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $tablet-media) {
   .nav__toggle {
     right: 0;
   }

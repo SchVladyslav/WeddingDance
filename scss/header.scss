@@ -26,6 +26,7 @@ $button-color: #ff699f;
 
 .header__nav-wrap a {
   margin-left: 35px;
+  transition: 0.2s;
 }
 
 .nav__list {
@@ -35,7 +36,6 @@ $button-color: #ff699f;
 
 .nav__item a:hover {
   box-shadow: 0 1px 0 0 #060606;
-  transition: 0.2s;
   cursor: pointer;
 }
 

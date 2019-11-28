@@ -1,5 +1,5 @@
 $desktop-media: 1080px;
-$tablet-media: 768px;
+$tablet-media: 786px;
 $mobile-media: 426px;
 
 $button-color: #ff699f;
@@ -190,6 +190,7 @@ $bg-image: url("../../img/first-dance-min.jpg");
     flex-direction: column;
     align-items: unset;
     margin-top: 20px;
+    height: auto;
 
     &__text-wrap {
       order: 2;
@@ -202,6 +203,22 @@ $bg-image: url("../../img/first-dance-min.jpg");
       margin-bottom: 40px;
       background-size: cover;
     }
+  }
+
+  .fadeIn-img {
+    opacity: 0;
+    animation: fade-in 1.7s forwards;
+  }
+
+  .fadeIn-title,
+  .fadeIn-desc {
+    opacity: 0;
+    animation: fade-in 2s forwards 0.5s;
+  }
+
+  .fadeIn-btn {
+    opacity: 0;
+    animation: fade-in 1.7s forwards 1s;
   }
 }
 
@@ -323,22 +340,6 @@ $bg-image: url("../../img/first-dance-min.jpg");
       font-size: 13px;
       line-height: 18px;
     }
-  }
-
-  .fadeIn-img {
-    opacity: 0;
-    animation: fade-in 1.7s forwards;
-  }
-
-  .fadeIn-title,
-  .fadeIn-desc {
-    opacity: 0;
-    animation: fade-in 2s forwards 0.5s;
-  }
-
-  .fadeIn-btn {
-    opacity: 0;
-    animation: fade-in 1.7s forwards 1s;
   }
 }
 

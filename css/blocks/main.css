@@ -143,7 +143,8 @@
   .intro {
     flex-direction: column;
     align-items: unset;
-    margin-top: 20px; }
+    margin-top: 20px;
+    height: auto; }
     .intro__text-wrap {
       order: 2;
       max-width: 100%; }
@@ -151,9 +152,19 @@
       order: 1;
       height: 392px;
       margin-bottom: 40px;
-      background-size: cover; } }
+      background-size: cover; }
+  .fadeIn-img {
+    opacity: 0;
+    animation: fade-in 1.7s forwards; }
+  .fadeIn-title,
+  .fadeIn-desc {
+    opacity: 0;
+    animation: fade-in 2s forwards 0.5s; }
+  .fadeIn-btn {
+    opacity: 0;
+    animation: fade-in 1.7s forwards 1s; } }
 
-@media (max-width: 768px) {
+@media (max-width: 786px) {
   .intro,
   .services {
     margin-bottom: 55px; }
@@ -210,17 +221,7 @@
     font-size: 32px; }
   .offer__item h3 {
     font-size: 13px;
-    line-height: 18px; }
-  .fadeIn-img {
-    opacity: 0;
-    animation: fade-in 1.7s forwards; }
-  .fadeIn-title,
-  .fadeIn-desc {
-    opacity: 0;
-    animation: fade-in 2s forwards 0.5s; }
-  .fadeIn-btn {
-    opacity: 0;
-    animation: fade-in 1.7s forwards 1s; } }
+    line-height: 18px; } }
 
 @media (max-width: 426px) {
   .intro {

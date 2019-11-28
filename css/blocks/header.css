@@ -16,7 +16,8 @@
   align-items: center; }
 
 .header__nav-wrap a {
-  margin-left: 35px; }
+  margin-left: 35px;
+  transition: 0.2s; }
 
 .nav__list {
   display: flex;
@@ -24,7 +25,6 @@
 
 .nav__item a:hover {
   box-shadow: 0 1px 0 0 #060606;
-  transition: 0.2s;
   cursor: pointer; }
 
 .header__button:hover {

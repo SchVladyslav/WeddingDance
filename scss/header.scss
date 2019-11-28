@@ -7,7 +7,7 @@ $button-color: #ff699f;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .header__title {
@@ -35,6 +35,7 @@ $button-color: #ff699f;
 
 .nav__item a:hover {
   box-shadow: 0 1px 0 0 #060606;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -74,6 +75,7 @@ $button-color: #ff699f;
 
       cursor: pointer;
       border: none;
+      outline: none;
 
       .header__nav--closed &:before {
         content: "";
@@ -86,6 +88,12 @@ $button-color: #ff699f;
 
         background-color: #000;
         box-shadow: 0 8px 0 0 #000, 0 16px 0 0 #000;
+
+        transition: box-shadow 1s ease;
+      }
+
+      .header__nav--closed &:hover:before {
+        box-shadow: 0 16px 0 0 #000;
       }
 
       .header__nav--opened &:before,
@@ -121,6 +129,7 @@ $button-color: #ff699f;
       display: none;
     }
   }
+
   .header__nav--closed .header__button {
     display: none;
   }

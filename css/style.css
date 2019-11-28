@@ -4,6 +4,9 @@
 /* Icons */
 @import url("./icon-style.css");
 
+/* Animate.css */
+@import url("./blocks/animate.min.css");
+
 /* slick */
 @import url("./slick/slick-theme.css");
 @import url("./slick/slick.css");

@@ -24,6 +24,7 @@ $bg-image: url("../../img/first-dance-min.jpg");
   font-size: 72px;
   line-height: 72px;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .intro__subtitle {
@@ -46,6 +47,7 @@ $bg-image: url("../../img/first-dance-min.jpg");
 
 .intro__button-start:hover {
   color: #000;
+  border-color: #000;
 }
 
 .intro__img-wrap {
@@ -70,6 +72,33 @@ $bg-image: url("../../img/first-dance-min.jpg");
   margin-bottom: 50px;
 }
 
+//animation
+
+.fadeIn-title {
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+.fadeIn-img,
+.fadeIn-desc {
+  opacity: 0;
+  animation: fade-in 2s forwards 0.5s;
+}
+
+.fadeIn-btn {
+  opacity: 0;
+  animation: fade-in 1.7s forwards 1.1s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Services */
 
 .services {
@@ -90,12 +119,17 @@ $bg-image: url("../../img/first-dance-min.jpg");
   margin-left: 20px;
 }
 
+.card__item:hover {
+  transform: scale(1.05);
+}
+
 .card__item {
   max-height: 640px;
   width: 420px;
   box-shadow: 0px 4px 30px rgba(207, 207, 207, 0.25);
   border-radius: 2px;
   padding-bottom: 20px;
+  transition: all 1s ease-out;
   cursor: pointer;
 }
 
@@ -134,7 +168,7 @@ $bg-image: url("../../img/first-dance-min.jpg");
 .offer__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
@@ -289,6 +323,22 @@ $bg-image: url("../../img/first-dance-min.jpg");
       font-size: 13px;
       line-height: 18px;
     }
+  }
+
+  .fadeIn-img {
+    opacity: 0;
+    animation: fade-in 1.7s forwards;
+  }
+
+  .fadeIn-title,
+  .fadeIn-desc {
+    opacity: 0;
+    animation: fade-in 2s forwards 0.5s;
+  }
+
+  .fadeIn-btn {
+    opacity: 0;
+    animation: fade-in 1.7s forwards 1s;
   }
 }
 

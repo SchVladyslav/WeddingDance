@@ -1,24 +1,24 @@
-/* fonts */
-@import url("./stylefonts.css");
-
-/* Icons */
-@import url("./icon-style.css");
-
-/* Animate.css */
-@import url("./blocks/animate.min.css");
-
-/* slick */
-@import url("./slick/slick-theme.css");
-@import url("./slick/slick.css");
-
 /* Global styles */
 @import url("./blocks/global-styles.css");
+
+/* fonts */
+@import url("./stylefonts.css");
 
 /* Header */
 @import url("./blocks/header.css");
 
 /* Main */
 @import url("./blocks/main.css");
+
+/* Icons */
+@import url("./icon-style.css");
+
+/* slick */
+@import url("./slick/slick-theme.css");
+@import url("./slick/slick.css");
+
+/* Animate.css */
+@import url("./blocks/animate.min.css");
 
 /* Footer */
 @import url("./blocks/footer.css");
